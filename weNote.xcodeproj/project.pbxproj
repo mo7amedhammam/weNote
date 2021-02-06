@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590CCA6A499299A988266EC6 /* Pods_weNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA687CC1FDB67CF405CF9FD1 /* Pods_weNote.framework */; };
+		879075D2CA0F5264CBDB15D1 /* Pods_weNote_weNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D2509D84C1707BFA6B4804 /* Pods_weNote_weNoteUITests.framework */; };
+		90E2D16225CF1EEA00A5D4CF /* notesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D16125CF1EEA00A5D4CF /* notesTable.swift */; };
+		90E2D17025CF29CF00A5D4CF /* notecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D16E25CF29CF00A5D4CF /* notecell.swift */; };
+		90E2D17125CF29CF00A5D4CF /* notecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E2D16F25CF29CF00A5D4CF /* notecell.xib */; };
+		90E2D17625CF2CD700A5D4CF /* tableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D17525CF2CD700A5D4CF /* tableViewExtension.swift */; };
+		90E2D17B25CF3B6000A5D4CF /* addNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D17A25CF3B6000A5D4CF /* addNoteCard.swift */; };
 		90F1183F25CEF6D20090881D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1183E25CEF6D20090881D /* AppDelegate.swift */; };
 		90F1184125CEF6D20090881D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1184025CEF6D20090881D /* SceneDelegate.swift */; };
 		90F1184325CEF6D20090881D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1184225CEF6D20090881D /* ViewController.swift */; };
@@ -15,6 +22,8 @@
 		90F1184B25CEF6D80090881D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90F1184925CEF6D80090881D /* LaunchScreen.storyboard */; };
 		90F1185625CEF6D80090881D /* weNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1185525CEF6D80090881D /* weNoteTests.swift */; };
 		90F1186125CEF6D90090881D /* weNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F1186025CEF6D90090881D /* weNoteUITests.swift */; };
+		90F1188C25CEFCE50090881D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90F1188B25CEFCE50090881D /* GoogleService-Info.plist */; };
+		F8B6162241B9F9C3C68E834A /* Pods_weNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FAA759ED508714C15D7E79 /* Pods_weNoteTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D2509D84C1707BFA6B4804 /* Pods_weNote_weNoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weNote_weNoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46175C3E199074F3CA252329 /* Pods-weNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNote.debug.xcconfig"; path = "Target Support Files/Pods-weNote/Pods-weNote.debug.xcconfig"; sourceTree = "<group>"; };
+		4AB06060A577E6ED60C2694F /* Pods-weNote-weNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNote-weNoteUITests.debug.xcconfig"; path = "Target Support Files/Pods-weNote-weNoteUITests/Pods-weNote-weNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD553CFCDDCF73FEB9D62CF /* Pods-weNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNoteTests.debug.xcconfig"; path = "Target Support Files/Pods-weNoteTests/Pods-weNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52A34E727DF980E6635CB8B5 /* Pods-weNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNoteTests.release.xcconfig"; path = "Target Support Files/Pods-weNoteTests/Pods-weNoteTests.release.xcconfig"; sourceTree = "<group>"; };
+		77CBD22BB56CD2774F9BEEEA /* Pods-weNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNote.release.xcconfig"; path = "Target Support Files/Pods-weNote/Pods-weNote.release.xcconfig"; sourceTree = "<group>"; };
+		90E2D16125CF1EEA00A5D4CF /* notesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesTable.swift; sourceTree = "<group>"; };
+		90E2D16E25CF29CF00A5D4CF /* notecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notecell.swift; sourceTree = "<group>"; };
+		90E2D16F25CF29CF00A5D4CF /* notecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = notecell.xib; sourceTree = "<group>"; };
+		90E2D17525CF2CD700A5D4CF /* tableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewExtension.swift; sourceTree = "<group>"; };
+		90E2D17A25CF3B6000A5D4CF /* addNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addNoteCard.swift; sourceTree = "<group>"; };
 		90F1183B25CEF6D10090881D /* weNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F1183E25CEF6D20090881D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90F1184025CEF6D20090881D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,10 @@
 		90F1185C25CEF6D90090881D /* weNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90F1186025CEF6D90090881D /* weNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weNoteUITests.swift; sourceTree = "<group>"; };
 		90F1186225CEF6D90090881D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90F1188B25CEFCE50090881D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B43C4AC1651742AD5BA0A3E7 /* Pods-weNote-weNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNote-weNoteUITests.release.xcconfig"; path = "Target Support Files/Pods-weNote-weNoteUITests/Pods-weNote-weNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9FAA759ED508714C15D7E79 /* Pods_weNoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weNoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA687CC1FDB67CF405CF9FD1 /* Pods_weNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590CCA6A499299A988266EC6 /* Pods_weNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B6162241B9F9C3C68E834A /* Pods_weNoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				879075D2CA0F5264CBDB15D1 /* Pods_weNote_weNoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C5764C74259572242426160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA687CC1FDB67CF405CF9FD1 /* Pods_weNote.framework */,
+				09D2509D84C1707BFA6B4804 /* Pods_weNote_weNoteUITests.framework */,
+				C9FAA759ED508714C15D7E79 /* Pods_weNoteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		90F1183225CEF6D10090881D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 				90F1185425CEF6D80090881D /* weNoteTests */,
 				90F1185F25CEF6D90090881D /* weNoteUITests */,
 				90F1183C25CEF6D10090881D /* Products */,
+				BE4C26EEBC68A1B5BEE7F615 /* Pods */,
+				8C5764C74259572242426160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +141,16 @@
 				90F1183E25CEF6D20090881D /* AppDelegate.swift */,
 				90F1184025CEF6D20090881D /* SceneDelegate.swift */,
 				90F1184225CEF6D20090881D /* ViewController.swift */,
+				90E2D17A25CF3B6000A5D4CF /* addNoteCard.swift */,
+				90E2D16125CF1EEA00A5D4CF /* notesTable.swift */,
+				90E2D16E25CF29CF00A5D4CF /* notecell.swift */,
+				90E2D16F25CF29CF00A5D4CF /* notecell.xib */,
 				90F1184425CEF6D20090881D /* Main.storyboard */,
 				90F1184725CEF6D80090881D /* Assets.xcassets */,
 				90F1184925CEF6D80090881D /* LaunchScreen.storyboard */,
 				90F1184C25CEF6D80090881D /* Info.plist */,
+				90F1188B25CEFCE50090881D /* GoogleService-Info.plist */,
+				90E2D17525CF2CD700A5D4CF /* tableViewExtension.swift */,
 			);
 			path = weNote;
 			sourceTree = "<group>";
@@ -128,6 +173,19 @@
 			path = weNoteUITests;
 			sourceTree = "<group>";
 		};
+		BE4C26EEBC68A1B5BEE7F615 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46175C3E199074F3CA252329 /* Pods-weNote.debug.xcconfig */,
+				77CBD22BB56CD2774F9BEEEA /* Pods-weNote.release.xcconfig */,
+				4AB06060A577E6ED60C2694F /* Pods-weNote-weNoteUITests.debug.xcconfig */,
+				B43C4AC1651742AD5BA0A3E7 /* Pods-weNote-weNoteUITests.release.xcconfig */,
+				4CD553CFCDDCF73FEB9D62CF /* Pods-weNoteTests.debug.xcconfig */,
+				52A34E727DF980E6635CB8B5 /* Pods-weNoteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F1186525CEF6D90090881D /* Build configuration list for PBXNativeTarget "weNote" */;
 			buildPhases = (
+				71DC0B860759BF680D60A392 /* [CP] Check Pods Manifest.lock */,
 				90F1183725CEF6D10090881D /* Sources */,
 				90F1183825CEF6D10090881D /* Frameworks */,
 				90F1183925CEF6D10090881D /* Resources */,
+				D835E224F67655733C8C4E41 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F1186825CEF6D90090881D /* Build configuration list for PBXNativeTarget "weNoteTests" */;
 			buildPhases = (
+				A31E204A9E6C0402D8CB8FBC /* [CP] Check Pods Manifest.lock */,
 				90F1184D25CEF6D80090881D /* Sources */,
 				90F1184E25CEF6D80090881D /* Frameworks */,
 				90F1184F25CEF6D80090881D /* Resources */,
@@ -170,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90F1186B25CEF6D90090881D /* Build configuration list for PBXNativeTarget "weNoteUITests" */;
 			buildPhases = (
+				8E16E9075A10D0013DA01F5E /* [CP] Check Pods Manifest.lock */,
 				90F1185825CEF6D90090881D /* Sources */,
 				90F1185925CEF6D90090881D /* Frameworks */,
 				90F1185A25CEF6D90090881D /* Resources */,
+				83619BAD3D614FE402158C78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				90F1184B25CEF6D80090881D /* LaunchScreen.storyboard in Resources */,
+				90F1188C25CEFCE50090881D /* GoogleService-Info.plist in Resources */,
+				90E2D17125CF29CF00A5D4CF /* notecell.xib in Resources */,
 				90F1184825CEF6D80090881D /* Assets.xcassets in Resources */,
 				90F1184625CEF6D20090881D /* Main.storyboard in Resources */,
 			);
@@ -253,14 +318,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		71DC0B860759BF680D60A392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83619BAD3D614FE402158C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weNote-weNoteUITests/Pods-weNote-weNoteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weNote-weNoteUITests/Pods-weNote-weNoteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weNote-weNoteUITests/Pods-weNote-weNoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E16E9075A10D0013DA01F5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weNote-weNoteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A31E204A9E6C0402D8CB8FBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-weNoteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D835E224F67655733C8C4E41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weNote/Pods-weNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weNote/Pods-weNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weNote/Pods-weNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		90F1183725CEF6D10090881D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E2D17B25CF3B6000A5D4CF /* addNoteCard.swift in Sources */,
+				90E2D17025CF29CF00A5D4CF /* notecell.swift in Sources */,
+				90E2D16225CF1EEA00A5D4CF /* notesTable.swift in Sources */,
 				90F1184325CEF6D20090881D /* ViewController.swift in Sources */,
 				90F1183F25CEF6D20090881D /* AppDelegate.swift in Sources */,
 				90F1184125CEF6D20090881D /* SceneDelegate.swift in Sources */,
+				90E2D17625CF2CD700A5D4CF /* tableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +605,7 @@
 		};
 		90F1186625CEF6D90090881D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46175C3E199074F3CA252329 /* Pods-weNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +625,7 @@
 		};
 		90F1186725CEF6D90090881D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CBD22BB56CD2774F9BEEEA /* Pods-weNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +645,7 @@
 		};
 		90F1186925CEF6D90090881D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD553CFCDDCF73FEB9D62CF /* Pods-weNoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +668,7 @@
 		};
 		90F1186A25CEF6D90090881D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A34E727DF980E6635CB8B5 /* Pods-weNoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +691,7 @@
 		};
 		90F1186C25CEF6D90090881D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB06060A577E6ED60C2694F /* Pods-weNote-weNoteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +712,7 @@
 		};
 		90F1186D25CEF6D90090881D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43C4AC1651742AD5BA0A3E7 /* Pods-weNote-weNoteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
