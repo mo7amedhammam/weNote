@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.97101449275374" y="8.7053571428571423"/>
+            <point key="canvasLocation" x="677" y="9"/>
         </scene>
         <!--Notes Table-->
         <scene sceneID="oRI-9w-jEB">
@@ -127,6 +127,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <items>
                                     <navigationItem id="1bk-Ce-lHk">
+                                        <nil key="title"/>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="F9l-Pp-19b">
+                                            <rect key="frame" x="124.5" y="7" width="165" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="new note"/>
+                                            <connections>
+                                                <action selector="newnoteBu:" destination="GaM-Zy-IJD" eventType="touchUpInside" id="fNc-DS-FZf"/>
+                                            </connections>
+                                        </button>
                                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" width="1" id="hre-5Y-2DE">
                                             <connections>
                                                 <action selector="addNoteButton:" destination="GaM-Zy-IJD" id="Guh-OD-6gv"/>
