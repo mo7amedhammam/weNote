@@ -60,6 +60,7 @@ class notesTable: UIViewController, UITableViewDelegate, UITableViewDataSource, 
             TitleTF.placeholder = "Note name..."
             TitleTF.textAlignment = .center
         })
+        
         alert.addTextField(configurationHandler: { BodyTF in
             BodyTF.placeholder = "What's your note datails..."
         })
@@ -69,49 +70,82 @@ class notesTable: UIViewController, UITableViewDelegate, UITableViewDataSource, 
             let noteBody = alert.textFields?.last?.text
             print(noteTitle!)
             print(noteBody!)
-            self.NoteLocation()
+            
+            self.determineMyCurrentLocation()
+
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
-    func NoteLocation(){
-        let locationManager = CLLocationManager()
-        let longtude:Double?
-        let latitude:Double?
-        let DateCreated:Date
-        let readableDateCreated:String
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startMonitoringVisits()
-        locationManager.delegate = self
+    // Mark: current location
+    var locationManager:CLLocationManager!
+    func determineMyCurrentLocation() {
+           locationManager = CLLocationManager()
+           locationManager.delegate = self
+           locationManager.desiredAccuracy = kCLLocationAccuracyBest
+           locationManager.requestAlwaysAuthorization()
+           
+           if CLLocationManager.locationServicesEnabled() {
+               locationManager.startUpdatingLocation()
+//               locationManager.startUpdatingHeading()
+           }else{
+        displayerror(errorBody: "Enable location services")
+           }
         
-        longtude = CLLocation().coordinate.longitude
-        latitude = CLLocation().coordinate.latitude
-//        DateCreated = CLLocation()
-
-        //current location
-            print("current location latitude is :", longtude!)
-            print("current location longitude is :", latitude!)
-                
+        }
+       
+       func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+           let userLocation:CLLocation = locations[0] as CLLocation
+             
+//            Call stopUpdatingLocation() to stop listening for location updates,
+           // other wise this function will be called every time when user location changes.
+           
+           manager.stopUpdatingLocation()
+           
+           print("user latitude = \(userLocation.coordinate.latitude)")
+           print("user longitude = \(userLocation.coordinate.longitude)")
+       }
+       
+       func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+       {
+        displayerror(errorBody: "Enable location services")
+           print("Error \(error)")
+       }
+    
+    
+    
+    
+    //    Dismiss alert  function && Error
+    func displayerror(errorBody : String){
+        let alert = UIAlertController.init(title: "Error", message: errorBody, preferredStyle: .alert)
+        let dismissbutton = UIAlertAction.init(title: "OK", style: .default, handler: nil)
+        alert.addAction(dismissbutton)
+        self.present(alert, animated: true, completion: nil)
+        
     }
-    
-    
 
 }
 
+//********** current lication **********//
 
-extension AppDelegate: CLLocationManagerDelegate {
-  func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
-    // create CLLocation from the coordinates of CLVisit
-    let clLocation = CLLocation(latitude: visit.coordinate.latitude, longitude: visit.coordinate.longitude)
+//    //Working Ok   ////////////////////
+//    func getCoordinatesFromPlace(place: String){
+//
+//        let geoCoder = CLGeocoder()
+//        geoCoder.geocodeAddressString(place) { (placemarks, error) in
+//            guard
+//                let placemarks = placemarks,
+//                let location = placemarks.first?.location?.coordinate
+//            else {
+//                // handle no location found
+//                return
+//            }
+//            print(location.latitude)
+//            print(location.longitude)
+//
+//        }
+//    }
 
-    // Get location description
-  }
 
-//    func newVisitReceived(_ visit: CLVisit, description: String) {
-//  //    let location = Location(visit: visit, descriptionString: description)
-//  //
-//  //    // Save location to disk
-//  //  }//
-}
 

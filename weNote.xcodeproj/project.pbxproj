@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		590CCA6A499299A988266EC6 /* Pods_weNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA687CC1FDB67CF405CF9FD1 /* Pods_weNote.framework */; };
 		879075D2CA0F5264CBDB15D1 /* Pods_weNote_weNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D2509D84C1707BFA6B4804 /* Pods_weNote_weNoteUITests.framework */; };
+		9039C16A25D2DAC900852A9A /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039C16925D2DAC900852A9A /* NoteModel.swift */; };
 		90E2D16225CF1EEA00A5D4CF /* notesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D16125CF1EEA00A5D4CF /* notesTable.swift */; };
 		90E2D17025CF29CF00A5D4CF /* notecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E2D16E25CF29CF00A5D4CF /* notecell.swift */; };
 		90E2D17125CF29CF00A5D4CF /* notecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E2D16F25CF29CF00A5D4CF /* notecell.xib */; };
@@ -50,6 +51,7 @@
 		4CD553CFCDDCF73FEB9D62CF /* Pods-weNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNoteTests.debug.xcconfig"; path = "Target Support Files/Pods-weNoteTests/Pods-weNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52A34E727DF980E6635CB8B5 /* Pods-weNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNoteTests.release.xcconfig"; path = "Target Support Files/Pods-weNoteTests/Pods-weNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		77CBD22BB56CD2774F9BEEEA /* Pods-weNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weNote.release.xcconfig"; path = "Target Support Files/Pods-weNote/Pods-weNote.release.xcconfig"; sourceTree = "<group>"; };
+		9039C16925D2DAC900852A9A /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		90E2D16125CF1EEA00A5D4CF /* notesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesTable.swift; sourceTree = "<group>"; };
 		90E2D16E25CF29CF00A5D4CF /* notecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notecell.swift; sourceTree = "<group>"; };
 		90E2D16F25CF29CF00A5D4CF /* notecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = notecell.xib; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				90F1184C25CEF6D80090881D /* Info.plist */,
 				90F1188B25CEFCE50090881D /* GoogleService-Info.plist */,
 				90E2D17525CF2CD700A5D4CF /* tableViewExtension.swift */,
+				9039C16925D2DAC900852A9A /* NoteModel.swift */,
 			);
 			path = weNote;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90E2D17B25CF3B6000A5D4CF /* addNoteCard.swift in Sources */,
+				9039C16A25D2DAC900852A9A /* NoteModel.swift in Sources */,
 				90E2D17025CF29CF00A5D4CF /* notecell.swift in Sources */,
 				90E2D16225CF1EEA00A5D4CF /* notesTable.swift in Sources */,
 				90F1184325CEF6D20090881D /* ViewController.swift in Sources */,

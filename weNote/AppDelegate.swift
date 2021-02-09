@@ -18,7 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         IQKeyboardManager.shared().isEnabled = true
         FirebaseApp.configure()
-//        CLLocationManager.requestAlwaysAuthorization()
         return true
     }
 
