@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GaM-Zy-IJD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fun-8q-FZh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -265,6 +265,37 @@
                 <exit id="V0C-dw-sd0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2191.304347826087" y="8.7053571428571423"/>
+        </scene>
+        <!--Opened NoteVC-->
+        <scene sceneID="ca1-OP-iau">
+            <objects>
+                <viewController id="Fun-8q-FZh" customClass="openedNoteVC" customModule="weNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAf-mr-fXr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B2n-Js-yHr">
+                                <rect key="frame" x="0.0" y="536" width="414" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="TZT-wL-P8M"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IrW-1c-kvG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B2n-Js-yHr" secondAttribute="bottom" id="Byp-W4-0dN"/>
+                            <constraint firstItem="B2n-Js-yHr" firstAttribute="trailing" secondItem="IrW-1c-kvG" secondAttribute="trailing" id="Ytl-Ad-5tJ"/>
+                            <constraint firstItem="B2n-Js-yHr" firstAttribute="leading" secondItem="IrW-1c-kvG" secondAttribute="leading" id="oRj-1S-mzU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapKitOutlet" destination="B2n-Js-yHr" id="PhV-gG-rbc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeV-Da-4fW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3062.3188405797105" y="8.7053571428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YoL-ke-AOI">
